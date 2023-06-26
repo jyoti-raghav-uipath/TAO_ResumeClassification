@@ -4,7 +4,7 @@
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.DataService.Activities": "[21.10.1]",
-    "UiPath.MLServices.Activities": "[1.2.1]",
+    "UiPath.MLServices.Activities": "[2.0.0]",
     "UiPath.System.Activities": "[21.10.4]",
     "UiPath.Testing.Activities": "[22.4.3]",
     "UiPathTeam.PDFRedaction.Activities": "[2.0.22]"
@@ -20,7 +20,7 @@
   ],
   "schemaVersion": "4.0",
   "studioVersion": "21.4.3.0",
-  "projectVersion": "1.0.3",
+  "projectVersion": "1.0.8",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -28,6 +28,7 @@
     "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
     "excludedLoggedData": [
       "Private:*",
       "*password*"
@@ -35,7 +36,8 @@
     "executionType": "Workflow",
     "readyForPiP": false,
     "startsInPiP": false,
-    "mustRestoreAllDependencies": false
+    "mustRestoreAllDependencies": false,
+    "pipType": "ChildSession"
   },
   "designOptions": {
     "projectProfile": "Developement",
