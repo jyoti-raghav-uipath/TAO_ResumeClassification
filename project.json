@@ -13,14 +13,14 @@
   "entitiesStores": [
     {
       "serviceDocument": ".entities/EntitiesStore.json",
-      "tenantName": "DSF_Internal",
+      "tenantName": "DemoRepository",
       "namespace": "DU_PII_Redaction",
-      "uniqueReference": "SA+xN6Zowv7FKbHp/GF8iSvmrlj9ZGlPEkP1n1Mwp8I="
+      "uniqueReference": "WJ7sgAEU1+0XI5GqUEt8aVXm/GKo7iRGCsEz52gjj2s="
     }
   ],
   "schemaVersion": "4.0",
   "studioVersion": "21.4.3.0",
-  "projectVersion": "1.0.8",
+  "projectVersion": "1.0.9",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,

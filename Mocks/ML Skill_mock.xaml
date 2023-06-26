@@ -6,7 +6,7 @@
     <x:Property Name="in_text" Type="InArgument(x:String)" />
     <x:Property Name="out_Output" Type="OutArgument(x:String)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>857.333333333333,4031.33333333333</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>857.333333333333,4096.66666666667</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="86">
@@ -120,7 +120,7 @@
       <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="730,3966.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_4">
+  <Sequence sap:VirtualizedContainerService.HintSize="730,4032" sap2010:WorkflowViewState.IdRef="Sequence_4">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="JsonResponse" />
       <Variable x:TypeArguments="x:String" Name="Email" />
@@ -152,15 +152,12 @@
         <InArgument x:TypeArguments="x:String">[string.Empty]</InArgument>
       </Assign.Value>
     </Assign>
-    <uma:MLSkills ApiKey="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Name="{x:Null}" NumberOfRetries="{x:Null}" ResponseHeaders="{x:Null}" Result="{x:Null}" SkillURL="{x:Null}" StatusCode="{x:Null}" TimeOutMs="{x:Null}" Connection="Robot" DisplayName="MLSkill" ExternApiFileType="JSON" sap:VirtualizedContainerService.HintSize="668,414.666666666667" sap2010:WorkflowViewState.IdRef="MLSkills_1" Item="[in_text]" JsonResponse="[JsonResponse]" NextPageNum="2" RefreshList="False" TotalCount="1">
+    <uma:MLSkills ApiKey="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Name="{x:Null}" NumberOfRetries="{x:Null}" ResponseHeaders="{x:Null}" Result="{x:Null}" SelectedMLSkill="{x:Reference __ReferenceID0}" SkillURL="{x:Null}" StatusCode="{x:Null}" TimeOutMs="{x:Null}" Connection="Robot" DisplayName="MLSkill" ExternApiFileType="JSON" sap:VirtualizedContainerService.HintSize="668,414.666666666667" sap2010:WorkflowViewState.IdRef="MLSkills_1" Item="[in_text]" JsonResponse="[JsonResponse]" NextPageNum="2" RefreshList="False" TotalCount="1">
       <uma:MLSkills.MLSkillList>
         <scg:List x:TypeArguments="um:MLSkill" Capacity="4">
-          <x:Reference>__ReferenceID0</x:Reference>
+          <um:MLSkill x:Name="__ReferenceID0" AccessUri="https://ai-uipath-we-b.deskover.com/mlskills/a17c9af1-091d-4dd2-9cec-ed787c6601c8/cc6eaf2e-9ce9-48c9-acd1-b47913b37d45/cluster-b/hr-test" AccountId="a17c9af1-091d-4dd2-9cec-ed787c6601c8" Description="" Id="2ee39659-a3cc-4c51-97db-02380edd6271" InputDescription="Text in English from which entities will be extracted." InputType="JSON" Name="HR_Test" OutputDescription="List of named entities in the text. Each elemnt in the list has the text that was recognized, the starting and ending positions (character-wise) of the text, the type of named entity and the confidence in that prediction. For example: [ {&quot;text&quot;: &quot;George Washington&quot;,&quot;start_pos&quot;: 0,&quot;end_pos&quot;: 17,&quot;type&quot;: &quot;PER&quot;,&quot;confidence&quot;: 0.96469810605049133 }, {&quot;text&quot;: &quot;New York City&quot;,&quot;start_pos&quot;: 26,&quot;end_pos&quot;: 39,&quot;type&quot;: &quot;LOC&quot;,&quot;confidence&quot;: 0.944470226764679 }, {&quot;text&quot;: &quot;Congress&quot;,&quot;start_pos&quot;: 51,&quot;end_pos&quot;: 59,&quot;type&quot;: &quot;ORG&quot;,&quot;confidence&quot;: 0.99666249752044678 }]" ProjectId="34f61c5c-4a0f-470a-90bb-2c77ccf5dcbb" TenantId="cc6eaf2e-9ce9-48c9-acd1-b47913b37d45" />
         </scg:List>
       </uma:MLSkills.MLSkillList>
-      <uma:MLSkills.SelectedMLSkill>
-        <um:MLSkill x:Name="__ReferenceID0" AccessUri="https://ai-uipath-we-b.deskover.com/mlskills/a17c9af1-091d-4dd2-9cec-ed787c6601c8/cc6eaf2e-9ce9-48c9-acd1-b47913b37d45/cluster-b/hr-test" AccountId="a17c9af1-091d-4dd2-9cec-ed787c6601c8" Description="" Id="2ee39659-a3cc-4c51-97db-02380edd6271" InputDescription="Text in English from which entities will be extracted." InputType="JSON" Name="HR_Test" OutputDescription="List of named entities in the text. Each elemnt in the list has the text that was recognized, the starting and ending positions (character-wise) of the text, the type of named entity and the confidence in that prediction. For example: [ {&quot;text&quot;: &quot;George Washington&quot;,&quot;start_pos&quot;: 0,&quot;end_pos&quot;: 17,&quot;type&quot;: &quot;PER&quot;,&quot;confidence&quot;: 0.96469810605049133 }, {&quot;text&quot;: &quot;New York City&quot;,&quot;start_pos&quot;: 26,&quot;end_pos&quot;: 39,&quot;type&quot;: &quot;LOC&quot;,&quot;confidence&quot;: 0.944470226764679 }, {&quot;text&quot;: &quot;Congress&quot;,&quot;start_pos&quot;: 51,&quot;end_pos&quot;: 59,&quot;type&quot;: &quot;ORG&quot;,&quot;confidence&quot;: 0.99666249752044678 }]" ProjectId="34f61c5c-4a0f-470a-90bb-2c77ccf5dcbb" TenantId="cc6eaf2e-9ce9-48c9-acd1-b47913b37d45" />
-      </uma:MLSkills.SelectedMLSkill>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -342,19 +339,32 @@
       </utam:MockActivity.MockedActivity>
       <Sequence sap2010:WorkflowViewState.IdRef="" />
     </utam:MockActivity>
-    <utam:MockActivity DisplayName="Mock Upload File to Record Field" MockedActivityIdRef="UploadFileToRecordField`1_2">
-      <utam:MockActivity.MockedActivity>
-        <uda:UploadFileToRecordField x:TypeArguments="d:TAO" ContinueOnError="False" DisplayName="Upload File to Record Field" ExpansionDepth="2" Field="Resume" FilePath="[in_PDFFilePath]" sap:VirtualizedContainerService.HintSize="668,344" sap2010:WorkflowViewState.IdRef="UploadFileToRecordField`1_2" OutputEntity="[TAORecordOutput]" RecordId="[TAORecordOutput.Id]" TimeoutInMs="30000">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="668,25.3333333333333" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,454.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_23">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-        </uda:UploadFileToRecordField>
-      </utam:MockActivity.MockedActivity>
-      <Sequence sap2010:WorkflowViewState.IdRef="" />
-    </utam:MockActivity>
+          <uda:UploadFileToRecordField x:TypeArguments="d:TAO" ContinueOnError="False" DisplayName="Upload File to Record Field" ExpansionDepth="2" Field="Resume" FilePath="[in_PDFFilePath]" sap:VirtualizedContainerService.HintSize="388,344" sap2010:WorkflowViewState.IdRef="UploadFileToRecordField`1_3" OutputEntity="[TAORecordOutput]" RecordId="[TAORecordOutput.Id]" TimeoutInMs="30000" />
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+    <uda:UploadFileToRecordField x:TypeArguments="d:TAO" ContinueOnError="False" DisplayName="Upload File to Record Field" ExpansionDepth="2" Field="Resume1" FilePath="[in_PDFFilePath]" sap:VirtualizedContainerService.HintSize="668,344" sap2010:WorkflowViewState.IdRef="UploadFileToRecordField`1_4" OutputEntity="[TAORecordOutput]" RecordId="[TAORecordOutput.Id]" TimeoutInMs="30000">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uda:UploadFileToRecordField>
     <utam:MockActivity DisplayName="Mock Upload Storage File" MockedActivityIdRef="UploadStorageFile_1">
       <utam:MockActivity.MockedActivity>
         <ucas:UploadStorageFile TimeoutMS="{x:Null}" Destination="[Name+&quot;.pdf&quot;]" DisplayName="Upload Storage File" sap:VirtualizedContainerService.HintSize="668,191.333333333333" sap2010:WorkflowViewState.IdRef="UploadStorageFile_1" Path="[in_PDFFilePath]" StorageBucketName="Resumes" />
